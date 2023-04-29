@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SkeletonUiDirective } from './skeleton-ui.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SkeletonUiDirective
   ],
   imports: [
     BrowserModule,
