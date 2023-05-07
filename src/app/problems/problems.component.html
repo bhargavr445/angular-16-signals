@@ -1,0 +1,8 @@
+<p>problems works!</p>
+<button (click)="navigateTo('problems/children')">childern</button>
+<router-outlet></router-outlet>
+{{counter()}}
+<button (click)="counterClick('Increment')">Increment</button>
+<button (click)="counterClick('Decrement')">Decrement</button>
+
+<div *ngFor="let action of actions()">{{action}}</div>
