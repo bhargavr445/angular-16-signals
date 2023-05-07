@@ -1,9 +1,15 @@
-<p>hello app..</p>
+<!-- <p>hello app..</p>
 {{signalService.appState().initialValue}}
 
 <table appSkeletonUi [tagInfo]="isLoading">
 
 </table>
 <form appSkeletonUi>
+    
 
-</form>
+</form> -->
+<button (click)="navigateTo('problems')">Problems</button>
+<button (click)="navigateTo('outcomes')">Outcomes</button>
+
+<router-outlet></router-outlet>
+<p>loaded...</p>
