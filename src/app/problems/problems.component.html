@@ -6,3 +6,28 @@
 <button (click)="counterClick('Decrement')">Decrement</button>
 
 <div *ngFor="let action of actions()">{{action}}</div>
+
+<button type="submit" (click)="getData()">Get Data</button>
+
+<div>
+    <table>
+        <thead>
+            <th>
+                Reason
+            </th>
+            <th>
+                Title
+            </th>
+            <th>
+                Author Association
+            </th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let gitRepo of responseAction()?.items">
+                <td>{{gitRepo.state_reason}}</td>
+                <td>{{gitRepo.title}}</td>
+                <td>{{gitRepo.id}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
